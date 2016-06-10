@@ -45,6 +45,14 @@ If no license found `null` returns.
 
 ## LICENSES
 
+```js
+var license = require('license.js');
+
+console.log(license.available());
+
+```
+
+
 * AGPL-3.0
 * Apache-2.0
 * BSD-2-Clause
