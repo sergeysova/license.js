@@ -1,0 +1,26 @@
+{
+  "name": "license.js",
+  "version": "0.1.0",
+  "description": "Get SPDX license template text",
+  "main": "lib/license.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LestaD/license.js.git"
+  },
+  "keywords": [
+    "license",
+    "generate",
+    "gpl3",
+    "npm",
+    "package"
+  ],
+  "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/LestaD/license.js/issues"
+  },
+  "homepage": "https://github.com/LestaD/license.js#readme"
+}
