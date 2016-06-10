@@ -1,6 +1,6 @@
 {
   "name": "license.js",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Get SPDX license template text",
   "main": "lib/license.js",
   "scripts": {
