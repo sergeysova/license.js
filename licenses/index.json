@@ -1,0 +1,117 @@
+{
+  "AGPL-3.0": {
+    "name": "AGPL-3.0",
+    "header": true,
+    "warranty": false
+  },
+  "Apache-2.0": {
+    "name": "Apache-2.0",
+    "header": true,
+    "warranty": false
+  },
+  "BSD-2-Clause": {
+    "name": "BSD-2-Clause",
+    "header": false,
+    "warranty": false
+  },
+  "BSD-3-Clause": {
+    "name": "BSD-3-Clause",
+    "header": false,
+    "warranty": false
+  },
+  "CC-BY-3.0": {
+    "name": "CC-BY-3.0",
+    "header": true,
+    "warranty": false
+  },
+  "CC-BY-NC-3.0": {
+    "name": "CC-BY-NC-3.0",
+    "header": true,
+    "warranty": false
+  },
+  "CC-BY-NC-ND-3.0": {
+    "name": "CC-BY-NC-ND-3.0",
+    "header": true,
+    "warranty": false
+  },
+  "CC-BY-NC-SA-3.0": {
+    "name": "CC-BY-NC-SA-3.0",
+    "header": true,
+    "warranty": false
+  },
+  "CC-BY-ND-3.0": {
+    "name": "CC-BY-ND-3.0",
+    "header": true,
+    "warranty": false
+  },
+  "CC-BY-SA-3.0": {
+    "name": "CC-BY-SA-3.0",
+    "header": true,
+    "warranty": false
+  },
+  "CC0-1.0": {
+    "name": "CC0-1.0",
+    "header": true,
+    "warranty": false
+  },
+  "CDDL-1.0": {
+    "name": "CDDL-1.0",
+    "header": false,
+    "warranty": false
+  },
+  "EPL-1.0": {
+    "name": "EPL-1.0",
+    "header": false,
+    "warranty": false
+  },
+  "GPL-2.0": {
+    "name": "GPL-2.0",
+    "header": false,
+    "warranty": false
+  },
+  "GPL-3.0": {
+    "name": "GPL-3.0",
+    "header": true,
+    "warranty": false
+  },
+  "ISC": {
+    "name": "ISC",
+    "header": false,
+    "warranty": false
+  },
+  "LGPL-3.0": {
+    "name": "LGPL-3.0",
+    "header": false,
+    "warranty": false
+  },
+  "MIT": {
+    "name": "MIT",
+    "header": false,
+    "warranty": false
+  },
+  "MPL-2.0": {
+    "name": "MPL-2.0",
+    "header": true,
+    "warranty": false
+  },
+  "Unlicense": {
+    "name": "Unlicense",
+    "header": false,
+    "warranty": false
+  },
+  "WTFPL": {
+    "name": "WTFPL",
+    "header": true,
+    "warranty": true
+  },
+  "X11": {
+    "name": "X11",
+    "header": false,
+    "warranty": false
+  },
+  "Zlib": {
+    "name": "Zlib",
+    "header": false,
+    "warranty": false
+  }
+}
