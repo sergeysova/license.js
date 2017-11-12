@@ -8,7 +8,7 @@
 npm install --save license.js
 ```
 
-## Usage
+## Programmatically usage
 
 
 ```js
