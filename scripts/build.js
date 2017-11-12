@@ -2,6 +2,8 @@ const fs = require('fs')
 const chalk = require('chalk')
 const path = require('path')
 
+/* eslint-disable no-console */
+
 const list = fs.readdirSync('./licenses')
   .filter(f => !f.includes('.json'))
   .map(e => e.replace('.txt', ''))
@@ -16,9 +18,9 @@ const warranty = list
 
 // console.log({ list, licenses, headers, warranty })
 
-let json = {}
+const json = {}
 
-licenses.forEach(license => {
+licenses.forEach((license) => {
   json[license] = {
     name: license,
     header: headers.includes(license),
@@ -27,14 +29,11 @@ licenses.forEach(license => {
 })
 
 console.log(chalk.yellow('Found licenses:'))
-console.log(
-  Object.values(json)
-    .map(license => '- ' + chalk.green(license.name)
-      + chalk.cyan(license.header ? (' ' + 'header') : '')
-      + chalk.cyan(license.warranty ? (' ' + 'warranty') : '')
-    )
-    .join('\r\n')
-)
+console.log(Object.values(json)
+  .map(license => `- ${chalk.green(license.name)
+  }${chalk.cyan(license.header ? (' header') : '')
+  }${chalk.cyan(license.warranty ? (' warranty') : '')}`)
+  .join('\r\n'))
 
 const indexFile = path.resolve(__dirname, '..', 'licenses', 'index.json')
 
@@ -44,4 +43,4 @@ fs.writeFileSync(
   'utf8'
 )
 
-console.log(chalk.bold.white('Saved list to ' + indexFile + '!'))
+console.log(chalk.bold.white(`Saved list to ${indexFile}!`))

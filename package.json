@@ -4,7 +4,7 @@
   "description": "Get SPDX license template text",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "eslint .",
     "build": "node scripts/build"
   },
   "repository": {
@@ -12,7 +12,7 @@
     "url": "git+ssh://git@github.com/LestaD/license.js.git"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "keywords": [
     "license",
@@ -31,5 +31,9 @@
     "chalk": "^2.3.0",
     "inquirer": "^3.3.0",
     "pify": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-atomix-base": "^4.6.0"
   }
 }
