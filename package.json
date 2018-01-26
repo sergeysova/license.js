@@ -7,6 +7,10 @@
     "test": "eslint .",
     "build": "node scripts/build"
   },
+  "files": [
+    "lib",
+    "licenses"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sergeysova/license.js.git"
