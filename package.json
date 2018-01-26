@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/LestaD/license.js.git"
+    "url": "git+ssh://git@github.com/sergeysova/license.js.git"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -21,19 +21,19 @@
     "npm",
     "package"
   ],
-  "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
+  "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com)",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/LestaD/license.js/issues"
+    "url": "https://github.com/sergeysova/license.js/issues"
   },
-  "homepage": "https://github.com/LestaD/license.js#readme",
+  "homepage": "https://github.com/sergeysova/license.js#readme",
   "dependencies": {
     "chalk": "^2.3.0",
-    "inquirer": "^3.3.0",
+    "inquirer": "^5.0.1",
     "pify": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.11.0",
-    "eslint-config-atomix-base": "^4.6.0"
+    "@atomix/eslint-config": "^6.1.1",
+    "eslint": "^4.16.0"
   }
 }

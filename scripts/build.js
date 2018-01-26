@@ -2,19 +2,22 @@ const fs = require('fs')
 const chalk = require('chalk')
 const path = require('path')
 
-/* eslint-disable no-console */
+/* eslint-disable no-console, no-magic-numbers */
 
 const list = fs.readdirSync('./licenses')
-  .filter(f => !f.includes('.json'))
-  .map(e => e.replace('.txt', ''))
+  .filter((f) => !f.includes('.json'))
+  .map((e) => e.replace('.txt', ''))
 
-const licenses = list.filter(e => !e.includes('header') && !e.includes('warranty'))
+const licenses = list
+  .filter((license) => !license.includes('header') && !license.includes('warranty'))
+
 const headers = list
-  .filter(e => e.includes('header') && !e.includes('warranty'))
-  .map(e => e.replace('-header', ''))
+  .filter((license) => license.includes('header') && !license.includes('warranty'))
+  .map((license) => license.replace('-header', ''))
+
 const warranty = list
-  .filter(e => e.includes('warranty'))
-  .map(e => e.replace('-warranty', ''))
+  .filter((license) => license.includes('warranty'))
+  .map((license) => license.replace('-warranty', ''))
 
 // console.log({ list, licenses, headers, warranty })
 
@@ -30,7 +33,7 @@ licenses.forEach((license) => {
 
 console.log(chalk.yellow('Found licenses:'))
 console.log(Object.values(json)
-  .map(license => `- ${chalk.green(license.name)
+  .map((license) => `- ${chalk.green(license.name)
   }${chalk.cyan(license.header ? (' header') : '')
   }${chalk.cyan(license.warranty ? (' warranty') : '')}`)
   .join('\r\n'))
